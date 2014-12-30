@@ -1,0 +1,221 @@
+.outer{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+}
+
+
+.header{
+  margin: 0px
+  position: fixed;            /* ヘッダーの固定 */
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;                  /* 位置(右0px) */
+  width: 1280px;
+  background-color: blue;
+}
+
+.title_logo{
+  text-align: left;
+  float: left;
+  padding: 0px 0px 8px 0px;
+  background-color: blue;
+}
+
+.menu{
+  font-size: 100%;
+  float: left;
+  font-weight: bold;
+  margin: 0px;
+  width: 800px;
+  height:64px;
+  background-color: green;
+}
+
+.menu a{
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.menu a:visited{
+  color: black;
+}
+
+
+
+.menu ul{
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li{
+  float: left;
+  margin: 0;
+  padding: 0px 25px;
+  height: 50px;
+  display: -webkit-box; /* safari, Chrome */
+  display: -moz-box;    /* Firefox */
+  display: -o-box;      /* Opera */
+  display: -ms-box;     /* IE */
+  display: box;         /* ベンダープレフィックスなし */
+  -webkit-box-align: center; /* safari, Chrome */
+  -moz-box-align: center;    /* Firefox */
+  -o-box-align: center;      /* Opera */
+  -ms-box-align: center;     /* IE */
+  box-align: center;         /* ベンダープレフィックスなし */
+}
+
+.menu a,
+.menu a::before,
+.memu a::after{
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu a:hover{
+  color: #C0C0C0;
+}
+
+
+.sns_btn{
+  width:240px;
+  height:49px;
+  padding-top: 15px;
+  float: right;
+  background-color: yellow;
+}
+
+.base{
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.use_cogoo{
+  display: block;
+  background-image: url(./img/bk_use_cogoo.png);
+  height: 554px;
+  position: relative;
+}
+
+.use_cogoo img{
+  position: absolute;
+  right: 120px;
+  bottom: 250px;
+}
+
+.supporter{
+  display: block;
+  background-image: url(./img/bk_supporter_top.png);
+  height: 554px;
+  position: relative;
+}
+
+.supporter img{
+  position: absolute;
+  right: 120px;
+  bottom: 250px;
+}
+
+.title_image{
+  margin: 30px;
+}
+
+.message{
+  font-size: 225%;
+  font-weight: bold;
+  color: #008D43;
+  line-height: 200%;
+}
+
+table.cogukatsu{
+  padding: 10px;
+  border-spacing: 30px;
+}
+
+.bk_cogukatsu{
+  background-image: url(./img/bk_cogukatsu.png);
+/*  background-attachment: fixed;*/
+  height: 340px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 250%;
+  font-weight: bold;
+  color: #008D43;
+}
+
+h4 {
+  font-size: 200%;
+  font-weight: bold;
+  color: #008D43;
+}
+
+
+.start_cogoo{
+    display: block;
+    background-image: url(./img/start_cogoo.png);
+    height: 550px;
+    position: relative;
+}
+
+/*サポーターページ*/
+
+.o-supporter{
+  width:1000px;
+  height:200px;
+  text-align:left;
+  border-top: 1px #000000 solid;
+}
+
+
+
+/*フッター共通*/
+
+.footer {
+    background-color:#000000;
+    color:#FFFFFF;
+    height:80px;
+    padding:30px 0 0 0;
+}
+
+/.footer ul{
+  list-style-type: none;
+  position: relative;
+  left: 50%;
+  float:left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer ul{
+  list-style-type: none;
+  width: 400px;
+  height: 50px;
+  margin: 0 auto 0 auto;
+}
+
+.footer li a{
+  display: block;
+  pading: 20px 0 20px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.footer li {
+  margin: 0 30px 0 0;
+  float:left;
+}
+
+.copy {
+  clear: both;
+}
