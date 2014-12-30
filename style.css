@@ -1,3 +1,5 @@
+/*全体共通*/
+
 #container{
   text-align: center;
   margin-left: auto;
@@ -5,7 +7,27 @@
   width: 1280px;
 }
 
-/*共通ヘッダー*/
+
+h1 {
+  font-size: 200%;
+  font-weight: bold;
+  color: black;
+}
+
+h2 {
+  font-size: 150%;
+  font-weight: bold;
+  color: black;
+}
+
+
+p {
+  font-size:100%;
+  color: black;
+}
+
+
+/*ヘッダー共通*/
 
 .pageheader{
   margin: 0px
@@ -39,7 +61,6 @@
 .menu a:visited{
   color: black;
 }
-
 
 
 .menu ul{
@@ -85,7 +106,7 @@
   float: right;
 }
 
-
+/*トップページ*/
 
 .base{
   text-align: center;
@@ -106,18 +127,6 @@
   bottom: 250px;
 }
 
-.supporter{
-  display: block;
-  background-image: url(./img/bk_supporter_top.jpg);
-  height: 556px;
-  position: relative;
-}
-
-.supporter img{
-  position: absolute;
-  right: 120px;
-  bottom: 250px;
-}
 
 .title_image{
   margin: 70px;
@@ -146,33 +155,29 @@ table.cogukatsu{
   line-height: 150%;
 }
 
-p {
-  font-size:100%;
-  color: black;
-}
-
-h2 {
-  font-size: 200%;
-  font-weight: bold;
-  color: black;
-}
-
-h4 {
-  font-size: 150%;
-  font-weight: bold;
-  color: black;
-}
-
 
 .start_cogoo{
     display: block;
     background-image: url(./img/start_cogoo.png);
-    height: 550px;
+    height: 556px;
     position: relative;
 }
 
 
 /*サポーターページ*/
+
+.supporter{
+  display: block;
+  background-image: url(./img/bk_supporter_top.jpg);
+  height: 556px;
+  position: relative;
+}
+
+.supporter img{
+  position: absolute;
+  right: 120px;
+  bottom: 250px;
+}
 
 .o-supporter{
   width:1000px;
@@ -181,6 +186,31 @@ h4 {
   border-top: 1px #000000 solid;
 }
 
+
+
+/*お問い合わせページ*/
+
+
+#article2 {
+  width:980px;
+  text-align:left;
+  margin: 0 auto;
+}
+
+#page_script{
+  padding-top: 100px;
+}
+
+#a_detail {
+  margin-left:30px;
+}
+
+
+/*プライバシーポリシーページ*/
+
+
+
+/*利用規約ページ*/
 
 
 /*フッター共通*/
