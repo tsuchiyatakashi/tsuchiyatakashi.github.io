@@ -12,14 +12,12 @@
   top: 0px;                   /* 位置(上0px) */
   left: 0px;                  /* 位置(右0px) */
   width: 1280px;
-  background-color: blue;
 }
 
 .title_logo{
   text-align: left;
   float: left;
   padding: 0px 0px 8px 0px;
-  background-color: blue;
 }
 
 .menu{
@@ -29,7 +27,6 @@
   margin: 0px;
   width: 800px;
   height:64px;
-  background-color: green;
 }
 
 .menu a{
@@ -85,7 +82,6 @@
   height:49px;
   padding-top: 15px;
   float: right;
-  background-color: yellow;
 }
 
 .base{
