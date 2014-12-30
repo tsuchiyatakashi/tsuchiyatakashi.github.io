@@ -1,4 +1,4 @@
-.outer{
+#container{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -7,7 +7,7 @@
 
 /*共通ヘッダー*/
 
-.header{
+.pageheader{
   margin: 0px
   position: fixed;            /* ヘッダーの固定 */
   top: 0px;                   /* 位置(上0px) */
@@ -96,7 +96,7 @@
 .use_cogoo{
   display: block;
   background-image: url(./img/bk_use_cogoo.png);
-  height: 554px;
+  height: 556px;
   position: relative;
 }
 
@@ -108,8 +108,8 @@
 
 .supporter{
   display: block;
-  background-image: url(./img/bk_supporter_top.png);
-  height: 554px;
+  background-image: url(./img/bk_supporter_top.jpg);
+  height: 556px;
   position: relative;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .title_image{
-  margin: 30px;
+  margin: 70px;
 }
 
 
@@ -185,7 +185,7 @@ h4 {
 
 /*フッター共通*/
 
-.footer {
+footer {
     background-color:#000000;
     color:#FFFFFF;
     height:80px;
@@ -202,14 +202,14 @@ h4 {
   width: 100%;
 }
 
-.footer ul{
+footer ul{
   list-style-type: none;
   width: 400px;
   height: 50px;
   margin: 0 auto 0 auto;
 }
 
-.footer li a{
+footer li a{
   display: block;
   pading: 20px 0 20px 0;
   text-align: center;
@@ -217,7 +217,7 @@ h4 {
   color: white;
 }
 
-.footer li {
+footer li {
   margin: 0 30px 0 0;
   float:left;
 }
