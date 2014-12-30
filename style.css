@@ -5,6 +5,7 @@
   width: 1280px;
 }
 
+/*共通ヘッダー*/
 
 .header{
   margin: 0px
@@ -84,6 +85,8 @@
   float: right;
 }
 
+
+
 .base{
   text-align: center;
   margin: 0px;
@@ -120,12 +123,6 @@
   margin: 30px;
 }
 
-.message{
-  font-size: 225%;
-  font-weight: bold;
-  color: #008D43;
-  line-height: 200%;
-}
 
 table.cogukatsu{
   padding: 10px;
@@ -142,16 +139,28 @@ table.cogukatsu{
   font-weight: bold;
 }
 
-h2 {
-  font-size: 250%;
+/.message{
+  font-size: 100%;
   font-weight: bold;
   color: #008D43;
+  line-height: 150%;
+}
+
+p {
+  font-size:100%;
+  color: black;
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: bold;
+  color: black;
 }
 
 h4 {
-  font-size: 200%;
+  font-size: 150%;
   font-weight: bold;
-  color: #008D43;
+  color: black;
 }
 
 
@@ -161,6 +170,7 @@ h4 {
     height: 550px;
     position: relative;
 }
+
 
 /*サポーターページ*/
 
