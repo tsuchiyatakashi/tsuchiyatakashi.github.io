@@ -1,257 +1,391 @@
-/*全体共通*/
-
-#container{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1280px;
+body {
+  padding-top:64px;
+  background-color:#FFFFFF;
+  border:0;
+  color:#000000;
+  font-family:Arial, Helvetica, ヒラギノ角ゴ, メイリオ;
+  font-size:14px;
+  margin:0 auto;
+  padding:64px 0 0;
 }
 
 
-h1 {
-  font-size: 200%;
-  font-weight: bold;
-  color: black;
-}
-
-h2 {
-  font-size: 150%;
-  font-weight: bold;
-  color: black;
+div {
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  border:0;
+  margin:0;
+  padding:0;
 }
 
 
-p {
-  font-size:100%;
-  color: black;
+div.block_outer {
+  margin:0 auto;
+  padding:0;
+  width:100%;
 }
 
 
-/*ヘッダー共通*/
-
-.pageheader{
-  margin: 0px
-  position: fixed;            /* ヘッダーの固定 */
-  top: 0px;                   /* 位置(上0px) */
-  left: 0px;                  /* 位置(右0px) */
-  width: 1280px;
+div.block {
+  margin:0 auto;
+  padding:0 16px;
+  width:980px;
 }
 
-.title_logo{
-  text-align: left;
-  float: left;
-  padding: 0px 0px 8px 0px;
-}
 
-.menu{
-  font-size: 100%;
-  float: left;
-  font-weight: bold;
-  margin: 0px;
-  width: 800px;
+/*メニュー*/
+
+#menu {
+  background-color:#ffffff;
+  color:#000000;
   height:64px;
+  left:0;
+  margin:0 auto;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:99;
 }
 
-.menu a{
-  text-decoration: none;
-  display: block;
-  color: black;
+#menu_outer {
+  background-color:#ffffff;
+  color:#000000;
+  height:100%;
+  margin:0 auto;
+  max-width:1280px;
+  position:relative;
+  z-index:99;
 }
 
-.menu a:visited{
-  color: black;
+#menu_inner {
+  background-color:#ffffff;
+  color:#000000;
+  height:100%;
+  margin:0 auto;
+  position:relative;
+  width:980px;
+  z-index:99;
 }
 
-
-.menu ul{
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li{
-  float: left;
-  margin: 0;
-  padding: 0px 25px;
-  height: 50px;
-  display: -webkit-box; /* safari, Chrome */
-  display: -moz-box;    /* Firefox */
-  display: -o-box;      /* Opera */
-  display: -ms-box;     /* IE */
-  display: box;         /* ベンダープレフィックスなし */
-  -webkit-box-align: center; /* safari, Chrome */
-  -moz-box-align: center;    /* Firefox */
-  -o-box-align: center;      /* Opera */
-  -ms-box-align: center;     /* IE */
-  box-align: center;         /* ベンダープレフィックスなし */
-}
-
-.menu a,
-.menu a::before,
-.memu a::after{
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.menu a:hover{
-  color: #C0C0C0;
+#menu_list {
+  border:0;
+  float:left;
+  height:100%;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:980px;
 }
 
 
-.sns_btn{
-  width:240px;
-  height:49px;
-  padding-top: 15px;
-  float: right;
-}
-
-/*トップページ*/
-
-.base{
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-.use_cogoo{
-  display: block;
-  background-image: url(./img/bk_use_cogoo.png);
-  height: 556px;
-  position: relative;
-}
-
-.use_cogoo img{
-  position: absolute;
-  right: 120px;
-  bottom: 250px;
+#menu_list li {
+  background-color:#ffffff;
+  border:0;
+  color:#000000;
+  display:block;
+  float:left;
+  font-size:16px;
+  font-weight:bold;
+  height:100%;
+  line-height:64px;
+  margin:0;
+  padding:0;
+  text-align:center;
+  width:100px;
 }
 
 
-.title_image{
-  margin: 70px;
+#menu_list li.logo {
+  background-color:#ffffff;
+  float:left;
+  height:64px;
+  width:260px;
 }
 
+
+#menu_list a {
+  border:0;
+  color:#000000;
+  display:block;
+  float:left;
+  font-size:14px;
+  height:100%;
+  line-height:64px;
+  margin:0;
+  padding:0;
+  text-align:center;
+  text-decoration:none;
+  width:100px;
+}
+
+
+#menu_list a.logo {
+  width:100%;
+}
+
+
+#logo img {
+  display:block;
+  margin:14px 0 0;
+}
+
+/*
+#menu_list li.supporter {
+  background-color:#015DB2;
+}
+
+#menu_list li.contact {
+  background-color:#015DB1;
+}
+*/
+
+/*top COGOOとは */
+
+#top {
+  background-image:url(./img/top_image2.jpg);
+  background-size:cover;
+  height:500px;
+  padding:0;
+  width:100%;
+}
+
+
+#title_about {
+  background-image:url(./img/title_about.png);
+  background-size:cover;
+  width:401px;
+  height:59px;
+  padding:0;
+}
+
+#message {
+  text-align:center;
+  font-size:12px;
+  line-height:400%;
+}
+
+#use_cogoo {
+  background-image:url(./img/use_cogoo.jpg);
+  background-size:cover;
+  height:500px;
+  padding:0;
+  width:100%;
+}
+
+/*top 導入大学 */
+
+#title_univ {
+  background-image:url(./img/title_univ.png);
+  background-size:cover;
+  width:401px;
+  height:59px;
+  padding:0;
+}
+
+/*top コグ活 */
+
+#title_students {
+  background-image:url(./img/title_students.png);
+  background-size:cover;
+  width:401px;
+  height:59px;
+  padding:0;
+}
+
+
+#cogukatsu{
+  width:980px;
+  margin:0 auto;
+}
 
 table.cogukatsu{
-  padding: 10px;
-  border-spacing: 30px;
+    border-spacing: 55px 0px;
+    padding:10px;
 }
 
-.bk_cogukatsu{
-  background-image: url(./img/bk_cogukatsu.png);
-/*  background-attachment: fixed;*/
-  height: 340px;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 300%;
-  font-weight: bold;
-}
+/*top award */
 
-/.message{
-  font-size: 100%;
-  font-weight: bold;
-  color: #008D43;
-  line-height: 150%;
+#title_award {
+  background-image:url(./img/title_award.png);
+  background-size:cover;
+  width:401px;
+  height:59px;
+  padding:0;
 }
 
 
-.start_cogoo{
-    display: block;
-    background-image: url(./img/start_cogoo.png);
-    height: 556px;
-    position: relative;
-}
-
-
-/*サポーターページ*/
-
-.supporter{
-  display: block;
-  background-image: url(./img/bk_supporter_top.jpg);
-  height: 556px;
-  position: relative;
-}
-
-.supporter img{
-  position: absolute;
-  right: 120px;
-  bottom: 250px;
-}
-
-.o-supporter{
-  width:1000px;
-  height:200px;
-  text-align:left;
-  border-top: 1px #000000 solid;
-}
-
-
-
-/*お問い合わせページ*/
-
-
-#article2 {
+#award{
   width:980px;
-  text-align:left;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
-#page_script{
-  padding-top: 100px;
-}
-
-#a_detail {
-  margin-left:30px;
+table.award{
+  border-spacing: 55px 0px;
+  padding:10px;
 }
 
 
-/*プライバシーポリシーページ*/
+/* サポーター */
 
-
-
-/*利用規約ページ*/
-
-
-/*フッター共通*/
-
-footer {
-    background-color:#000000;
-    color:#FFFFFF;
-    height:80px;
-    padding:30px 0 0 0;
+#supporter {
+  background-image:url(./img/supporter_top.jpg);
+  background-size:cover;
+  height:500px;
+  padding:0;
+  width:100%;
 }
 
-/.footer ul{
+
+#title_supporter {
+background-image:url(./img/title_supporter.png);
+background-size:cover;
+width:401px;
+height:59px;
+padding:0;
+}
+
+#supporter1{
+  width:980px;
+  margin:0 auto;
+}
+
+table.supporter1{
+  border-spacing: 30px 20px;
+}
+
+#supporter2{
+  width:980px;
+  margin:0 auto;
+}
+
+table.supporter2{
+  border-spacing: 15px 0px;
+  padding:10px;
+  border-top:1px gray solid;
+}
+
+#supporter2 td.logo{
+  width:100px;
+  height:100px;
+  text-align:center;
+  vertical-align:center;
+}
+
+#supporter2 td.company{
+  font-size:12px;
+  width:350px;
+}
+
+#supporter2 td.comment{
+  font-size:12px;
+}
+
+#supporter2 td.name{
+  font-size:11px;
+  text-align:right;
+}
+
+
+
+
+
+
+/*お問い合わせ*/
+
+#contact {
+  width:980px;
+  margin:0 auto;
+}
+
+#contact h1{
+  font-size:30px;
+}
+
+
+
+#contact p{
+  font-size:18px;
+}
+
+
+/*プライバシーポリシー*/
+
+#p-policy {
+  width:980px;
+  margin:0 auto;
+}
+
+#p-policy h1{
+  font-size:30px;
+}
+
+#p-policy h2{
+  font-size:25px;
+}
+
+#p-policy p{
+  font-size:18px;
+}
+
+
+/*利用規約*/
+
+#u-policy {
+  width:980px;
+  margin:0 auto;
+}
+
+#u-policy h1{
+  font-size:30px;
+}
+
+#u-policy h2{
+  font-size:25px;
+}
+
+#u-policy p{
+  font-size:18px;
+}
+
+
+
+
+/*フッター*/
+
+#footer {
+  background-color:#000000;
+  color:#FFFFFF;
+  height:100px;
+  width:100%;
+  text-align:center;
+}
+
+
+#footer ul {
   list-style-type: none;
-  position: relative;
-  left: 50%;
-  float:left;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-footer ul{
-  list-style-type: none;
-  width: 400px;
-  height: 50px;
+  width:450px;
+  height: 70px;
+  line-height:60px;
+  text-align:center;
   margin: 0 auto 0 auto;
 }
 
-footer li a{
-  display: block;
-  pading: 20px 0 20px 0;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
 
-footer li {
+#footer li {
   margin: 0 30px 0 0;
   float:left;
 }
 
-.copy {
-  clear: both;
+
+
+#footer li a {
+  display: block;
+  pading: 20px 0 20px 0;
+  text-decoration: none;
+  color: white;
+}
+
+
+.join_cogoo{
+  text-align:center;
 }
