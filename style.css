@@ -129,15 +129,13 @@ div.block {
   margin:14px 0 0;
 }
 
-/*
-#menu_list li.supporter {
-  background-color:#015DB2;
+
+#menu_list li a:hover {
+  color: #FFF;
+  background-color: green;
 }
 
-#menu_list li.contact {
-  background-color:#015DB1;
-}
-*/
+
 
 /*top COGOOとは */
 
@@ -383,6 +381,11 @@ table.supporter2{
   pading: 20px 0 20px 0;
   text-decoration: none;
   color: white;
+}
+
+
+#footer li a:hover {
+  color: gray;
 }
 
 
