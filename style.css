@@ -19,7 +19,7 @@ div {
 }
 
 
-div.block_outer {
+#block_outer {
   margin:0 auto;
   padding:0;
   width:100%;
